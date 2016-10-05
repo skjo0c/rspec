@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#factory girl
+gem 'factory_girl_rails'
 group :development, :test do
   gem 'rspec-rails', '~> 3.4'
 end
