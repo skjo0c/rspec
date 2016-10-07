@@ -1,8 +1,7 @@
 <h1> Hello </h1>
-<% @posts.each do |post| %>
-    <h2> <% post.title %> by <% post.author %></h2>
-    <p>
-        <%= post.content %>
-    </p>
+<% simple_form_for Post.new do |f| %>
+    <<%= f.input :title %>
+    <%= f.input :author %>
+    <%= f.input :content %>
 <% end %>
-<simple_form></simple_form>
+

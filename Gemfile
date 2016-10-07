@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# test model
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
+end
 #factory girl
 gem 'factory_girl_rails'
 group :development, :test do
